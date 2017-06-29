@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		human = new Array("마크", "제니", "태연", "이효리", "로제");
+		document.write("<h4>1개의 배열 사용</h4>");
+
+		for (var i = 0; i < human.length; i++) {
+			document.write(human[i] + " ");
+		}
+		document.write("<hr>");
+		document.write("join()-" + human.join() + "<br>");
+		document.write("join(/)-" + human.join("/") + "<br>");
+		document.write("join(*)-" + human.join("*") + "<br>");
+		document.write("slice(0,2)-" + human.slice(0, 2) + "<br>");
+		document.write("slice(2)-" + human.slice(2) + "<br>");
+		document.write("reverse()-" + human.reverse() + "<br>");
+		document.write("sort()-" + human.sort());
+
+		document.write("<hr>");
+
+		document.write("<h4>3개의 배열 사용<h4>");
+		city = new Array("뉴욕", "시카고", "서울", "런던", "도쿄");
+		jumsu = new Array(100, 90, 75, 80, 90);
+	</script>
+
+	<table border="1" width="300">
+		<tr>
+			<th>이름</th>
+			<th>지역</th>
+			<th>점수</th>
+		</tr>
+
+		<script>
+			for (var i = 0; i < human.length; i++) {
+				document.write("<tr><td>" + human[i] + "</td><td>" + city[i]
+						+ "</td><td>" + jumsu[i] + "</td></tr>");
+			}
+		</script>
+		<tr>
+			<th></th>
+		</tr>
+
+	</table>
+
+
+</body>
+</html>

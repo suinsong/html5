@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+	function ppp() {
+	
+
+		str = "id 객체에 입력된 값 : " + form.id.value + "\n";
+		str += "name 객체에 입력된 값 : "+ form.irum.value + "\n" ;
+		str += "hidden 객체의 value 속성 값 : " + form.file.value + "\n";
+
+		alert(str);
+		
+		
+
+	}
+</script>
+
+
+
+</head>
+<body>
+
+
+
+	<form name="form">
+		<input type="hidden" name="file" value="hidden" />
+		<table cellpadding="10">
+
+
+			<tr>
+
+				<td>아 이 디 :</td>
+				<td><input type="text" name="id"></td>
+
+			</tr>
+
+			<tr>
+
+				<td>이 름 :</td>
+				<td><input type="text" name="irum"></td>
+			</tr>
+
+			<tr>
+				<td colspan="2" align="center"><input type="button" name="bt"
+					onClick="ppp()" value="전송"> </tabel>
+	</form>
+</body>
+</html>

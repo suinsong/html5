@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form name="myForm" action="Member_1.html" method="post">
+<table border="1" width="700" cellpading=10" alingn="center">
+	<caption><h2 align="center">**회원가입**</h2></caption>
+	<tr>
+		<th width=100>아이디</th>
+		<td>
+			<input type="text" name="id" placeholder="ID입력">
+			<input type="button" value="아이디확인" onClick="return idd()">
+		</td>
+	</tr>
+	
+
+
+	<tr>
+		<th>비밀번호</th>
+		<td>
+			<table>
+				<tr>
+					<td>
+						<input type="password" name="pw" >
+					</td>
+				
+					<td rowspan="2">
+						<input type="button" value="패스워드확인"><br>
+					</td>
+				</tr>
+				<tr>
+					<td>	
+						<input type="password" name="repw">
+					</td>
+				
+				</tr>
+			
+			
+			</table>
+			
+		</td>
+	</tr>
+	
+	
+	<tr>
+		<th>성별</th>
+		<td>
+			<input type="radio" name="gender" value="woman" checked>여자
+			<input type="radio" name="gender" value="man">남자
+		</td>
+	</tr>
+	
+	
+	<tr>
+		<th>생년월일</th>
+		<td>
+			<input type="text" name="year" value="년" size="10">년
+			<input type="text" name="month" value="월" size="10">월
+			<input type="text" name="day" value="일" size="10">일
+		
+		</td>
+	</tr>
+	
+	
+	<tr>
+		<th>이메일</th>
+		<td>
+			<input type="text" size="30">
+		</td>
+	</tr>
+	
+	
+	<tr>
+		<th>사진</th>
+		<td>
+			<input type="file" name="file" >
+		</td>
+	</tr>
+	
+	
+	<tr>
+		<th>자기소개</th>
+		<td>
+			<textarea name="textself" rows="10" cols="50">
+			여기에 여러 줄의 사연을 적으실 수 있어요. 이 내용을 지우고 자신의 사연을 적으세요
+			</textarea>
+			
+		</td>
+	</tr>
+	
+	
+	<tr>
+		<th>취미</th>
+		<td>
+			<input type="checkbox" name="hobby" value="1">게임
+			<input type="checkbox" name="hobby" value="2">채팅
+			<input type="checkbox" name="hobby" value="3">등산
+			<input type="checkbox" name="hobby" value="4">낚시
+			<input type="checkbox" name="hobby" value="5">여행
+		</td>
+	</tr>
+	
+	
+	<tr>
+		<th>직업</th>
+		<td>
+			<select name="job">
+				<option value="1">학생
+				<option value="2">회사원
+				<option value="3">무직
+				
+			
+			</select>
+		</td>
+	</tr>
+	
+	
+	<tr>
+		<th>즐겨찾기</th>
+		<td>
+			<ul type="circle">
+				<li><a href ="http://naver.com" target="_blank">네이버</a></li>
+				<li><a href =""http://daum.net" target="_blank">다음</a> </li>
+			
+			
+			</ul>
+		</td>
+	</tr>
+	
+	
+	<tr>
+		<th>사번</th>
+		<td>
+			<a href="사번.html" onClick="사번()" >사번으로 부서 알아보기
+		</td>
+	</tr>
+	
+	
+	<tr>
+		<th>합계산</th>
+		<td>
+			<input type="text" size="10" name="value1">부터
+			<input type="text" size="10" name="value2">까지의 합 
+			<a href =""  onClick="hap()">계산</a>
+		</td>
+	</tr>
+	
+	
+	<tr>
+	
+		<td colspan="2" align="center"><h4>광고메일 수신을 동의하시겠습니까?</h4>
+		<input type="radio" name="agree" value="agree" checked>동의합니다
+		<input type="radio" name="agree" value="disagree">동의하지않습니다
+		
+		</td>
+		
+	</tr>
+	
+		<tr align="center">
+			<td colspan="2">
+				<input type="button" value="BACK" onClick="history.back()">&nbsp;
+				<input type="button" value="완료" onClick="13_1.html">&nbsp;
+				<input type="button" value="취소" onClick="">
+		
+		</th>
+		
+	</tr>
+	
+	
+	
+
+</table>
+</form>
+</body>
+</html>

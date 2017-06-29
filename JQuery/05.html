@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+<!-- 
+<script>
+	//on():이벤트 연결, off():이벤트 제거
+	//메소드 체이닝을 사용해 문서 객체에 여러개의 이벤트를 적용
+
+	$(document).ready(function(){
+		$('#box').css({
+			width:100,
+			height:100,
+			background:'orange'
+			
+			
+		}).on('click',function(){
+			$(this).css('background','red');
+		}).on('mouseenter',function(){
+			$(this).css('background','blue');
+		}).on('mouseleave'.function(){
+			$(this).css('background','orange');
+		})
+	})
+</script>
+
+
+-->
+
+<script>
+	//객체를 사용해 이벤트를 연결
+
+	$(document).ready(function() {
+		$('#box').css({
+			width : 100,
+			height : 100,
+			background : 'orange'
+		}).on({
+			click : function() {
+				$(this).css('background', 'red');
+			},
+			mouseenter : function() {
+				$(this).css('background', 'blue');
+			},
+			mouseleave : function() {
+				$(this).css('background', 'orange');
+			}
+		});
+	});
+</script>
+
+
+</head>
+<body>
+
+
+	<div id="box"></div>
+
+	<hr>
+	보통:노란색
+	<br> 마우스오버:파란색
+	<br> 마우스클릭:빨강
+
+
+</body>
+</html>

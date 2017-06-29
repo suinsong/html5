@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function clickme() {
+		alert("버튼을 한 번 눌렀습니다");
+	}
+
+	function overme() {
+		alert("마우스를 버튼 위에 올렸습니다");
+	}
+
+	function cf() {
+		input = confirm("정말 삭제하시겠습니까?");
+		if (input == true)
+			alert("삭제가 완료되었습니다");
+		else
+			alert("삭제가 취소되었습니다");
+	}
+
+	function pp() {
+		input = prompt("id를 입력하세요", "id");
+		if (input == null)
+			alert("id등록이 취소되었습니다");
+		else
+			alert(input + "님 등록되었습니다");
+	}
+
+	function pt() {
+		input = confirm("이 페이지를 출력할까요?");
+		if (input)
+			window.print();
+		else
+			alert("출력이 취소되었습니다");
+	}
+
+	function pu() {
+		window.open("popup.html","","height=200,width=300,left=80, top=80");
+	}
+	
+	
+	function greet(){
+		alert("환영합니다");
+		
+		
+	}
+</script>
+
+
+</head>
+<body onLoad="greet()">
+	<form>
+		<input type="button" value="click" onClick="clickme()" /><br> <br>
+		<input type="button" value="mouseover" onMouseOver="overme()" /><br>
+		<br> <input type="button" value="confirm" onClick="cf()" /><br>
+		<br> <input type="button" value="prompt" onClick="pp()" /><br>
+		<br> <input type="button" value="print" onClick="pt()" /><br>
+		<br> <input type="button" value="popup" onClick="pu()" /><br>
+		<br>
+
+	</form>
+
+
+
+</body>
+</html>

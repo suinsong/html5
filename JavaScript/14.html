@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function person(job, style, hobby) {
+		this.job = job;
+		this.style = style;
+		this.hobby = hobby;
+		
+	}
+
+	function showme(human) {
+		document.write("<h3>내가 만나고픈 사람</h3>");
+		for (all in human) {
+			document.write(human[all] + "<br>");
+
+		}
+	}
+</script>
+</head>
+<body>
+	<script type="text/javascript">
+		woman = new person("webdesigner", "터프걸", "드라이브");
+		man = new person("programer", "꽃미남", "공상");
+
+		document.write("<hr>");
+
+		showme(woman);
+		showme(man);
+	</script>
+
+
+</body>
+</html>

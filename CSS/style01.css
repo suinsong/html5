@@ -1,0 +1,38 @@
+@CHARSET "EUC-KR";
+
+h1, h2, h3{
+	font-family:'±Ã¼­'; color:#A566FF}
+
+
+
+p,table,li{
+	margin-left:10pt;
+	
+}
+
+
+ul{
+	list-style:circle;
+}
+
+
+p, li, th, td{
+	font-size:80%;
+}
+
+body{
+	background-color:#FFEBFF; color:gray;
+}
+
+
+
+a:link{
+	color:black;
+}
+
+
+a:visited{
+	color:red
+	
+}
+

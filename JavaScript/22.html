@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script>
+
+function pw(){
+	pw1=form.pw1.value;
+	pw2=form.pw2.value;
+	min=6;
+	
+	if(pw1=="" || pw2==""){
+		alert("암호를 두 번 입력하세요");
+		return false;
+	}
+	if(pw1.length<min || pw2.length<min){
+		alert("최소 6자 이상 입력하세요");
+		return false;
+	}
+	if(pw1.indexOf(" ")>-1 || pw2.indexOf(" ")>-1){
+		alert("공백은 입력하지 마세요");
+		return false;
+		
+	}
+	
+	if(pw1!=pw2){
+		alert("암호가 다릅니다");
+		return false;
+		
+	}else{
+		
+		
+		alert("암호입력이 완료되었습니다");
+		return true;
+	}
+
+	
+	
+	
+}
+
+
+</script>
+
+
+</head>
+<body>
+
+
+	<form action="22_1.html" name="form" onSubmit="return pw()">
+		암호를 입력하세요</br> 최소 6자, 최대 12자를 입력하세요<br> 공백은 안 됩니다.<br>
+
+		<table cellpadding=10px>
+			<tr>
+				<td>암호 입력 :</td>
+				<td><input type="password" name="pw1" maxlength="12"></td>
+			</tr>
+			<tr>
+				<td>한 번 더 입력 :</td>
+				<td><input type="password" name="pw2" maxlength="12"></td>
+			</tr>
+
+
+			<tr>
+				<td colspan="2" align="center"><input type="submit" value="완료">
+					<input type="reset" value="취소"></td>
+
+			</tr>
+
+		</table>
+
+
+
+	</form>
+
+
+</body>
+</html>

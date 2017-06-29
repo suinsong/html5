@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+
+<!--  원하는 태그 안에 나타나게 하는거!!!!
+<script>
+	$(document).ready(function() {
+		for (var i = 0; i < 10; i++) {
+			$('<h1>jQuery+' + i + '</h1>').css({
+				backgroundColor :'black',
+				color : 'red'
+
+			}).appendTo('body')
+
+		}
+	});
+</script>
+ -->
+
+<script>
+	$(document).ready(function() {
+		for (var i = 0; i < 10; i++) {
+			$txt = $('<h1>jQuery+' + i + '</h1>').css({
+				backgroundColor : 'black',
+				color : 'red'
+			});
+			$('body').append($txt);
+		}
+
+	})
+</script>
+
+
+</head>
+<body>
+
+</body>
+</html>

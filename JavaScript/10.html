@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		today = new Date();
+		document.write("today=" + today + "<br>");
+		document.write("년도 : " + (today.getYear() + 1900) + "<br>");
+		document.write("월 : " + (today.getMonth() + 1) + "<br>");
+		document.write("일 : " + today.getDate() + "<br>");
+		document.write("시 : " + today.getHours() + "<br>");
+		document.write("분 : " + today.getMinutes() + "<br>");
+		document.write("초 : " + today.getSeconds() + "<br>");
+		document.write("요일 : " + today.getDay() + "<br>");
+
+		switch (today.getDay()) {
+		case 0:
+			day = "일";
+			break;
+
+		case 1:
+			day = "월";
+			break;
+		case 2:
+			day = "화";
+			break;
+		case 3:
+			day = "수";
+			break;
+		case 4:
+			day = "목";
+			break;
+		case 5:
+			day = "금";
+			break;
+		case 6:
+			day = "토";
+			break;
+
+		default:
+			day = "error";
+
+		}
+		document.write("요일 : " + day + "요일<br><hr>");
+		document.write("현재 시스템의 날짜는 " + (today.getYear() + 1900) + "년 "
+				+ today.getMonth() + "월 " + today.getDate() + "일 " + day
+				+ "요일 입니다<br>");
+
+		if (today.getHours() >= 12) {
+			a = "오후";
+			h = today.getHours() - 12;
+		} else {
+			a = "오전";
+			h = today.getHours();
+
+		}
+
+		document.write("현재 시간은 " + a + today.getHours() + "시 "
+				+ today.getMinutes() + "분 " + today.getSeconds() + "초 "
+				+ "입니다<br><hr>");
+
+		today1 = new Date();
+		today1.setYear(2003);
+		today1.setMonth(3);
+		today1.setDate(15);
+
+		document.write("년도 : " + (today1.getYear() + 1900) + "<br>");
+		document.write("월 : " + today1.getMonth() + "<br>");
+		document.write("일 : " + today1.getDate() + "<br><hr>");
+	</script>
+
+
+
+</body>
+</html>

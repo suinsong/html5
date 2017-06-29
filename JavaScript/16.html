@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script>
+	function ck() {
+		alert("버튼을 클릭하셨습니다");
+
+	}
+
+	function mo() {
+		alert("마우스를 버튼 위에 올리셨어요");
+
+	}
+	function cm() {
+		input = confirm("삭제하시겠습니까?");
+		if (input == true)
+			alert("삭제완료");
+		else
+			alert("삭제취소");
+
+	}
+	function pt() {
+		input = prompt("e-mail을 입력하세요");
+		if (input == null)
+			alert("e-mail등록이 취소되었습니다");
+		else
+			alert(input + " 등록이 되었습니다");
+
+	}
+	function pnt() {
+		input = confirm("이 페이지를 출력할까요?");
+		if (input)
+			window.print();
+		else alert("출력이 취소되었습니다");
+
+	}
+	function pp() {
+		window.open("popup.html","","height=200,width=300,left=80, top=80");
+	}
+	
+	
+	function greet(){
+		alert("환영합니다");
+	}
+</script>
+
+
+
+</head>
+<body onLoad="greet()">
+	<form>
+		페이지가 로드되면 '환영합니다'라는 경고창을 띄운다. <br> <br>
+		
+		
+		버튼을 클릭하면 '버튼을 클릭하셨습니다'라는 경고창을 띄운다. <br> 
+		<input type="button" value="click" onClick="ck()"><br> <br> 
+		
+		
+		
+		버튼에 마우스를 오버하면 '마우스를 버튼 위에 올리셨어요'라는 경고창을 띄운다. <br>
+		<input type="button" value="mouseover" onMouseOver="mo()"> <br><br> 
+		
+		
+		
+		
+		버튼을 클릭하면 '삭제하시겠습니까?'확인/취소창을 띄운다. <br> 확인을 클릭하면 삭제완료.',
+		취소를 클릭하면 '삭제취소'라는 경고창을 띄운다. <br> 
+		<input type="button" value="confirm" onClick="cm()"><br> <br>
+			
+			
+		 버튼을 클릭하면 	'e-mail을 입력하세요'라는 프롬프트창을 띄운다. <br> 
+		 확인을 클릭하면 '입력한 e-mail이 등록되었습니다'라는 경고창을 띄운다. <br> 
+		 취소를 클릭하면 'e-mail 등록이 취소되었습니다'라는 경고창을 띄운다. <br> 
+		 <input type="button" value="prompt" onClick="pt()"><br> <br> 
+		 
+		 
+		 
+		버튼을 클릭하면 '이 페이지를 출력할까요?'라는 확인/취소창을 띄운다. <br>
+		확인을 클릭하면 인쇄창을 띄우고, 취소를 클릭하면 '인쇄취소'라는 경고창을 띄운다. <br> 
+		<input type="button" value="print" onClick="pnt()"> <br> <br>
+		
+		
+		
+		버튼을 클릭하면 popup..html파일을 팝업창으로 띄운다. <br> 
+		<input type="button" value="popup" onClick="pp()"> <br> <br>
+
+
+
+	</form>
+</body>
+</html>

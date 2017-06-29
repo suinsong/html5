@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	checkflag = "false";
+	function check(field) {
+
+		if (checkflag == "false") {
+			for (i = 0; i < field.length; i++) {
+				field[i].checked = true;
+				
+			}
+			checkflag = "true";
+			return "모두싫어";
+		} else {
+			for ( i = 0; i < field.length; i++) {
+				field[i].checked = false;
+			}
+			checkflag = "false";
+			return "모두 좋아";
+		}
+
+	}
+</script>
+
+
+</head>
+<body>
+	<h4>좋아하는 가수를 고르세요</h4>
+	[모두 좋아] 버튼을 누르시면 모두 체크됨
+	<br> [모두 싫어] 버튼을 누르시면 모두 해제됩니다
+
+
+	<form>
+		<input type="checkbox" name="list" value="1">마마무 <br> <input
+			type="checkbox" name="list" value="2">블랙핑크 <br> <input
+			type="checkbox" name="list" value="3">갓세븐 <br> <input
+			type="checkbox" name="list" value="4">소녀시대 <br> <input
+			type="checkbox" name="list" value="5">레드벨벳 <br> <br>
+
+		<input type="button" value="모두좋아"
+			onClick="this.value=check(this.form.list)" /> <br> <br>
+	</form>
+
+</body>
+</html>

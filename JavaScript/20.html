@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function fs() {
+		if (form.irum.value == "") {
+			alert("이름을 입력하세요");
+			form.irum.focus();
+			return false;
+		}
+		if (form.age.value == "") {
+			alert("나이를 입력하세요");
+			form.age.focus();
+			return false;
+		}
+
+		answer = confirm("정말 보낼까요?");
+		if (answer)
+			return true;
+		else
+			return false;
+
+	}
+</script>
+
+
+</head>
+<body>
+
+	전송 버튼을 눌렀을때
+	<br> 이름이 공백이면 경고창 -> "이름을 입려갛세요."
+	<br>나이가 공백이면 경고창 -> "나이를 입력하세요."
+	<br> 둘 다 입력했으면 확인/취소창->"정말보낼까요?"
+	<br>확인->20_1.html: 전송되었습니다
+	<br>취소-> 취소
+
+	<form name="form" action="20_1.html" method="post"
+		onsubmit="return fs()">
+		<table border="1" cellpadding="10">
+
+			<tr>
+				<td>이름:</td>
+				<td><input type="text" name="irum" /></td>
+			</tr>
+
+			<tr>
+				<td>나이:</td>
+				<td><input type="text" name="age" /></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><input type="submit" value="전송" />&nbsp;&nbsp;
+					<input type="reset" value="취소" /></td>
+
+			</tr>
+
+
+
+		</table>
+
+
+	</form>
+
+
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+<!--  
+<script>
+	$(document).ready(function() {
+		$('button').click(function() {
+			$('.page').slideToggle('slow');
+		});
+	});
+</script>
+-->
+
+
+<!--  서서히 사라졌다가 생김 -->
+<script>
+	$(document).ready(function() {
+		$('button').click(function() {
+			$('.page').fadeToggle('slow');
+		});
+	});
+</script>
+
+
+
+</head>
+<body>
+
+	<button>Toggle Show</button>
+	<div class="page">
+		<h1>광주</h1>
+		<p>
+			광주는 전라남도의 빛고을입니다.<br> 예술과 정열이 넘치는 도시입니다.
+		</p>
+
+
+	</div>
+
+
+
+
+
+
+</body>
+</html>

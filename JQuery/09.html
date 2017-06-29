@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+div.item:nth-child(1) {
+	background: purple;
+}
+
+div.item:nth-child(2) {
+	background: pink;
+}
+
+div.item:nth-child(3) {
+	background: burlywood;
+}
+</style>
+
+<script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+
+<script>
+	$(document).ready(function() {
+		width = $('[data-role="slider"]').attr('data-width');
+		height = $('[data-role="slider"]').attr('data-height');
+		count = $('[data-role="slider"] div.item').length;
+
+		//스타일
+		$('[data-role="slider"]').css({
+			position : 'relative',
+			overflow : 'hidden',
+			width : width,
+			height : height
+		}).find('.container').css({
+			position : 'absolute',
+			width : count * width,
+			overflow : 'hidden'
+		}).find('.item').css({
+			width:width, height:height, float:'left'
+		});
+		
+		currentPage=0;
+		changePage=function(){
+			$('[data-role="slider"] > .container').animate({
+				left:-currentPage*width
+			},500);
+		};
+		
+		$('#left-button').click(function(){
+			if (currentPage>0) {
+				currentPage=currentPage-1;
+				changePage();
+			}
+		});
+		
+		
+		$('#right-button').click(function(){
+			if (currentPage<count-1) {
+				currentPage=currentPage+1;
+				changePage();
+			}
+		});
+
+	})
+</script>
+
+</head>
+<body>
+	<div data-role="slider" data-width="500" data-height="300">
+		<div class="container">
+			<div class="item">
+				<h2>서울</h2>
+				서울은 대한민국의 수도입니다.<br> 한강이 관통하고 있는 도시입니다.
+
+			</div>
+
+			<div class="item">
+				<h2>광주</h2>
+				광주는 전라남도의 빛고을입니다.<br> 예술과 정열이 넘치는 도시입니다
+
+			</div>
+
+			<div class="item">
+				<h2>부산</h2>
+				부산은 영화제가 열리는 도시입니다.<br> 항구 도시로 무역의 중심지입니다.
+
+			</div>
+		</div>
+
+	</div>
+
+	<button id="left-button">←</button>
+	<button id="right-button">→</button>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script>
+	function color() {
+		if (form.colorbox.value == "")
+			alert("색상을 입력하고 클릭하세요");
+		else
+			document.bgColor = form.colorbox.value;
+
+	}
+</script>
+
+
+
+</head>
+<body>
+	<form name="form">
+		<h4>원하는 배경색 이름을 입력하고 오른쪽 버튼을 클릭하세요</h4>
+
+		<input type="text" name="colorbox" /> 
+		<input type="button" name="btn"
+			value="click" onClick="color()" />
+
+
+
+
+
+	</form>
+
+
+
+</body>
+</html>

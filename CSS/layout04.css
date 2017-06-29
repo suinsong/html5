@@ -1,0 +1,124 @@
+@CHARSET "EUC-KR";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-famil: "Malgun Gothic", "dotum"; /* 맑은 고딕, 돋움체 */
+	font-size: 1em; /* 1em=16px */
+	color: rgba(50, 50, 50, 1);
+}
+
+#wrap {
+	margin: 0 auto;
+	width: 800px;
+}
+
+.clear {
+	clear: both;
+} /* 불필요하게 교차된 박스르 분리해주는 역할 */
+img {
+	border: 0;
+}
+
+header {
+	padding: 20px;
+	margin-top: 10px;
+	background-color: rgba(204, 255, 255, 1);
+	border: 1px solid rgba(102, 102, 102, 1);
+	border-radius: 5px;
+}
+
+nav {
+	float: left;
+	width: 150px;
+	height: 330px;
+	background-color: rgba(255, 253, 233, 1);
+	border: 1px solid rgba(102, 102, 102, 1);
+	margin: 5px 0;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	float: left;
+	padding: 0 5px 0 0;
+}
+
+nav ul li a {
+	display: block; /* 링크가 걸린 부분에 블록을 지정해줘서 공간을 확보함 */
+	padding: 1px 20px 3px 20px;
+	color: rgba(5, 151, 51, 1);
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	background-color: rgba(102, 153, 255, 1);
+	border-radius: 5px;
+	color: rgba(255, 255, 225, 1)
+}
+
+article {
+	float: right;
+	width: 600px; background-color : rgba( 255, 255, 204, 1);
+	border: 1px solid rgba(102, 102, 102, 1);
+	margin: 5px 0;
+	border-radius: 5px;
+	font-size: 0.75em;
+	padding: 15px;
+	background-color: rgba(255, 255, 204, 1);
+}
+
+article hgroup {
+	padding: 5px;
+}
+
+article hgroup h1, article hgroup h2 {
+	margin: 0;
+	padding: 2px 0;
+}
+
+article hgroup h1 {
+	font-size: 22px;
+}
+
+article hgroup h2 {
+	font-size: 18px;
+}
+
+section {
+	width: 250px;
+	padding: 10px;
+	margin: 10px;
+	border: 1px solid rgba(102, 102, 102, 1);
+	background-color: rgba(255, 255, 255, 1);
+	border-radius: 5px;
+	word-wrap: break-word; /* 박스의 길이보다 긴 글자는 다음 줄로 처리*/
+}
+
+section h2 {
+	font-size: 14px;
+	padding: 0 0 10px 0;
+	margin: 0;
+	color: rgba(155, 0, 0, 1);
+}
+
+footer {
+	float: right;
+	width: 590px; 
+	background-color : rgba( 232, 255, 244, 1);
+	border: 1px solid rgba(102, 102, 102, 1);
+	margin: 5px 0;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 0.75em;
+	background-color: rgba(232, 255, 244, 1);
+}

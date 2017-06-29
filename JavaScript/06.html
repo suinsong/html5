@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+	function cal(op1, op2) {
+		document.write("op1 + op2 =" + (op1 + op2) + "<br>");
+		document.write("op1 - op2 =" + (op1 - op2) + "<br>");
+		document.write("op1 * op2 =" + (op1 * op2) + "<br>");
+		document.write("op1 / op2 =" + (op1 / op2) + "<br><hr>");
+
+	}
+
+	function cal2(op1, op2, op3) {
+		if(op1=="+") return(op2+op3);
+		else if(op1=="-") return(op2-op3);
+		else if(op1=="*") return(op2*op3);
+		else if(op1=="/") return(op2/op3);
+		else return "error"
+
+	}
+</script>
+
+</head>
+<body>
+	<script type="text/javascript">
+		cal(10, 5);
+		cal(15, 4);
+		
+		res=cals2("+", 15,15);
+		document.write("op2+op3="+res+"<br>");
+		
+		res=cals2("-", 15,15);
+		document.write("op2-op3="+ res+"<br>");
+		
+		res=cals2("*", 15,15);
+		document.write("op2*op3="+res+"<br>");
+		
+		res=cals2("/", 15,15);
+		document.write("op2/op3="+res+"<br>");
+		
+		
+		
+		
+	</script>
+
+
+
+
+</body>
+</html>
